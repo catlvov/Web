@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            display: flex;
+            /*background-image: radial-gradient(circle,red 40%,green 30%,blue );*/
+            /*background-image:conic-gradient(from 45deg at 10% 10%, red,blue);*/
+            background-attachment:fixed;
+        }
+        .shadow-box-1, .shadow-box-2{
+            width: 256px;
+            height: 256px;
+            border: solid 1px;
+            margin: 200px auto;
+        }
+        .shadow-box-1{
+            box-shadow: -150px 50px 50px 0px green, 
+                        150px 50px 50px 0px blue,
+                        50px -150px 50px 0px red;
+        }
+        .bmw{
+            width:384px;
+            height:384px;
+            border:solid 16px darkblue;
+            border-radius:210px;
+            margin:300px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .shadow-box-2 {
+            margin:0px auto;
+            border:solid 3px darkblue;
+            border-radius:128px;
+            box-shadow:0px 0px 0px 70px white;
+            background-image: conic-gradient(white 0deg,white 90sdeg,blue 90deg,blue 180deg,white 180deg,white 270deg,blue 270deg,blue 360deg);
+            /*background-image: url('img/bmw.png');
+            height: 300px;
+            width: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;*/
+            /*box-shadow: inset 50px 50px 50px 0px red,inset -50px -50px 50px 0px green;*/
+            /*background-image:radial-gradient(red,green,blue);*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Shadows</h1>
+    <div class="shadow-box-1"></div>
+    <div class="bmw">
+        <div class="shadow-box-2"></div>
+    </div>
+    <div class="shadow-box-2"></div>
+</body>
+</html>
