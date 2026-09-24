@@ -1,0 +1,110 @@
+﻿body, input
+{
+	font-size:32px;
+}
+.header
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	border-bottom:solid 1px gray;
+}
+	.header > h3, .header > h5
+	{
+		margin:16px;
+	}
+	.header > div
+	{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	.header input
+	{
+		width:48px;
+		height:32px;
+	}
+#switch-background
+{
+	--bg-size:48px;
+	width:var(--bg-size);
+	height:var(--bg-size);
+	background-size:var(--bg-size) var(--bg-size);
+	margin: 16px;
+	transition:3s;
+}
+.dark
+{
+	background-color:#323232;
+	color:white;
+}
+	.dark #switch-background
+	{
+		background-image:url('sun.png');
+		filter: brightness(0) invert(1);
+	}
+.light
+{
+	background-color:white;
+	color:black;
+}
+	.light #switch-background
+	{
+		background-image:url('moon.png');
+	}
+body
+{
+	transition: color 3s, background-color 3s;
+}
+/*-------------------------------------------*/
+.factorial
+{
+	display:flex;
+	justify-content:flex-start;
+}
+#factorial-result
+{
+	margin-left:8px;
+}
+.task
+{
+	margin:32px;
+	padding:16px;
+	border-radius:8px;
+	box-shadow:0px 0px 16px 0px gray;
+}
+	.task > h2
+	{
+		margin:0;
+	}
+/*//////////////////////////////////////////////////////////*/
+.images-and-colors, .colors
+{
+	display:flex;
+	justify-content:space-between;
+}
+
+.photo-container > .image-container, img
+{
+	width: 300px;
+	height: 350px;
+}
+.photo-container > .image-container
+{
+	border:solid 1px;
+}
+input[type=color]
+{
+	margin-right:32px;
+}
+/*----------------------------- time ------------------------------*/
+#clock
+{
+	text-align:center;
+
+	font-size:42px;
+}
+#clock-controls 
+{
+	font-size:32px;
+}
